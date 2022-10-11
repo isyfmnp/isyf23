@@ -1,0 +1,58 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*Top*/
+.banner{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -2;
+}
+.ham{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+.ham a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.box:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom left, #3dd9bd 0%, #58a4b0 100% );
+    transform: translate3d(2px, 2px, 0) scale(1);
+    border-radius: inherit;
+}
+.box::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+        

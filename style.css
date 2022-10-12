@@ -1,22 +1,26 @@
-html, body{
+html,
+body {
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Lato',sans-serif;
+    font-family: "Lato", sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-.center-xy{
+
+.center-xy {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
+
 /*Top*/
-.banner{
+.banner {
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -24,7 +28,8 @@ a{
     position: relative;
     z-index: -2;
 }
-.banner .headline{
+
+.banner .headline {
     color: white;
     height: auto;
     position: absolute;
@@ -35,14 +40,16 @@ a{
     text-align: right;
     font-size: 25px;
 }
-.title{
+
+.title {
     position: absolute;
     top: 0;
     right: 0;
     margin: 0;
 }
-.shadow{
-    background: linear-gradient(to bottom left, #3dd9bd 0%, #58a4b0 100% );
+
+.shadow {
+    background: linear-gradient(to bottom left, #3dd9bd 0%, #58a4b0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: -1;
@@ -51,7 +58,8 @@ a{
     right: -2px;
     margin: 0;
 }
-.ham{
+
+.ham {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -60,13 +68,15 @@ a{
     height: 50px;
     border-radius: 25px;
 }
-.ham *{
+
+.ham * {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.social{
+
+.social {
     position: absolute;
     top: 20px;
     right: 90px;
@@ -75,22 +85,26 @@ a{
     width: 150px;
     border-radius: 25px;
 }
-.social div{
+
+.social div {
     width: 113px;
 }
-.social div iconify-icon{
+
+.social div iconify-icon {
     padding: 5px;
     padding-bottom: 0;
 }
-.accentdot{
+
+.accentdot {
     position: absolute;
     bottom: -25px;
     right: 20px;
     width: 50px;
     height: 50px;
     border-radius: 25px;
-    background: linear-gradient(to bottom left, #3dd9bd 0%, #58a4b0 100% );
+    background: linear-gradient(to bottom left, #3dd9bd 0%, #58a4b0 100%);
 }
+
 .box:before {
     content: "";
     z-index: -1;
@@ -99,10 +113,11 @@ a{
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to bottom left, #3dd9bd 0%, #58a4b0 100% );
+    background: linear-gradient(to bottom left, #3dd9bd 0%, #58a4b0 100%);
     transform: translate3d(2px, 2px, 0) scale(1);
     border-radius: inherit;
 }
+
 .box::after {
     content: "";
     z-index: -1;
@@ -113,4 +128,27 @@ a{
     left: 0;
     background: inherit;
     border-radius: inherit;
+}
+
+.logo {
+    /* middle of the left edge of the screen */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -60%);
+
+    /* sizing */
+    width: 550px;
+    height: 565px;
+}
+
+.logo-img {
+    /* positioning */
+    /* translate back up */
+    position: relative;
+    transform: translate(0, -105%);
+
+    /* sizing */
+    width: 90%;
+    height: 90%;
 }

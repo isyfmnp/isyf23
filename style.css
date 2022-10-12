@@ -8,6 +8,12 @@ a{
     text-decoration: none;
     color: black;
 }
+.center-xy{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 /*Top*/
 .banner{
     width: 100%;
@@ -26,11 +32,36 @@ a{
     height: 50px;
     border-radius: 25px;
 }
-.ham a{
+.ham *{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+.social{
+    position: absolute;
+    top: 20px;
+    right: 90px;
+    background-color: white;
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+}
+.social div{
+    width: 113px;
+}
+.social div iconify-icon{
+    padding: 5px;
+    padding-bottom: 0;
+}
+.accentdot{
+    position: absolute;
+    bottom: -25px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(to bottom left, #3dd9bd 0%, #58a4b0 100% );
 }
 .box:before {
     content: "";

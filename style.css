@@ -133,7 +133,7 @@ h1{
     bottom: 0;
     left: 0;
     background: linear-gradient(to bottom left, #3dd9bd 0%, #58a4b0 100%);
-    transform: translate3d(2px, 2px, 0) scale(1);
+    transform: translate(2px, 2px);
     border-radius: inherit;
 }
 
@@ -217,8 +217,7 @@ h1{
     height: 100%;
     width: 0;
     z-index: 14;
-    transition-duration: 0.1s;
-    backdrop-filter: blur(2px);
+    transition-duration: 0.4s;
 }
 #sidebar a#closes{
     position: absolute;

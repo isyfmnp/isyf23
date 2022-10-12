@@ -135,20 +135,21 @@ a {
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translate(0, -60%);
+    transform: translate(0, -50%);
 
     /* sizing */
-    width: 550px;
-    height: 565px;
+    width: calc(100% - 600px);
+    height: 80%;
 }
 
 .logo-img {
     /* positioning */
     /* translate back up */
-    position: relative;
-    transform: translate(0, -105%);
-
+    position: absolute;
+    /*transform: translate(0, - calc(90% * (100% - 600px)));*/
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
     /* sizing */
     width: 90%;
-    height: 90%;
 }

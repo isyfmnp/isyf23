@@ -250,6 +250,15 @@ h1{
     width: calc(100% - 430px);
     margin-left: 50px;
     font-size: 20px;
-    line-height: 35px;
     padding-top: 100px;
+}
+.righttxt{
+    width: calc(100% - 430px);
+    margin-right: 50px;
+    margin-left: 380px;
+    font-size: 20px;
+    padding-top: 100px;
+}
+.lefttxt p, .righttxt p{
+    line-height: 35px;
 }

@@ -24,6 +24,33 @@ a{
     position: relative;
     z-index: -2;
 }
+.banner .headline{
+    color: white;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(calc(-50% - 60px));
+    width: 500px;
+    text-align: right;
+    font-size: 25px;
+}
+.title{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+}
+.shadow{
+    background: linear-gradient(to bottom left, #3dd9bd 0%, #58a4b0 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -1;
+    position: absolute;
+    top: 2px;
+    right: -2px;
+    margin: 0;
+}
 .ham{
     position: absolute;
     top: 20px;
@@ -87,4 +114,3 @@ a{
     background: inherit;
     border-radius: inherit;
 }
-        

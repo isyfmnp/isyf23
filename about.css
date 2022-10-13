@@ -1,0 +1,7 @@
+.accentdot, .shadow, .box:before {
+    background: linear-gradient(to bottom left, #F96E46 0%, #FBAF00 100%);
+}
+.shadow{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

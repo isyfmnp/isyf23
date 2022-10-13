@@ -171,6 +171,9 @@ h1{
     /* sizing */
     height: 80%;
 }
+.logo svg{
+    max-width: 100%;
+}
 @media screen and (max-width: 980px) {
     .logo{
         top: 15%;
@@ -181,6 +184,10 @@ h1{
     .banner .headline{
         top: 80%;
         width: calc(100% - 80px);
+    }
+    .logo-img{
+        width: 80%;
+        height: auto;
     }
 }
 @media screen and (max-width: 600px) {

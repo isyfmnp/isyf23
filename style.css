@@ -308,6 +308,7 @@ h1{
     margin-left: 380px;
     font-size: 20px;
     padding-top: 100px;
+    text-align: right;
 }
 .lefttxt p, .righttxt p{
     line-height: 35px;

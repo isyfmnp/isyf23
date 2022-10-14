@@ -265,16 +265,26 @@ h1{
     min-height: 650px;
 }
 .right{
-    height: 450px;
+    height: calc(100% - 150px);
     position: absolute;
     top: 100px;
     right: 0;
 }
-.left{
+.right svg{
     height: 450px;
+    position: sticky;
+    top: 25px;
+}
+.left{
+    height: calc(100% - 150px);
     position: absolute;
     top: 100px;
     left: 0;
+}
+.left svg{
+    height: 450px;
+    position: sticky;
+    top: 25px;
 }
 .inright{
     color: white;

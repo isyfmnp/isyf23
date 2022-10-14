@@ -326,11 +326,15 @@ h1{
 .photo{
     width: 60%;
     border-radius: 25px;
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .photodesc{
     font-size: 0.8rem;
     display: block;
     margin-top: 10px;
+    text-align: center;
 }
 
 /*Footer*/

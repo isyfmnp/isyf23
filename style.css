@@ -12,12 +12,12 @@ a {
     color: black;
 }
 
-li{
+li {
     line-height: 30px;
 }
 
-h1{
-    font-family: 'Open Sans',sans-serif;
+h1 {
+    font-family: "Open Sans", sans-serif;
 }
 
 .center-xy {
@@ -33,6 +33,7 @@ h1{
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     position: relative;
 }
 
@@ -76,7 +77,7 @@ h1{
     border-radius: 25px;
 }
 
-.ham:hover{
+.ham:hover {
     cursor: pointer;
 }
 
@@ -100,12 +101,14 @@ h1{
 .social div {
     width: 113px;
 }
-.social div a{
+
+.social div a {
     display: inline-block;
     width: 35px;
     height: 30px;
 }
-.social div a:hover{
+
+.social div a:hover {
     cursor: pointer;
 }
 
@@ -125,9 +128,10 @@ h1{
     box-shadow: 2px 2px 3px #333;
 }
 
-.box{
+.box {
     z-index: 2;
 }
+
 .box:before {
     content: "";
     z-index: -1;
@@ -171,45 +175,52 @@ h1{
     position: absolute;
     top: 50%;
     left: 10px;
-    transform: translate(0,-50%);
+    transform: translate(0, -50%);
     /* sizing */
     height: 80%;
 }
-.logo svg{
+
+.logo svg {
     max-width: 100%;
 }
+
 @media screen and (max-width: 980px) {
-    .logo{
+    .logo {
         top: 15%;
-        transform: translate(0,0);
+        transform: translate(0, 0);
         max-width: 60%;
         height: 50%;
     }
-    .banner .headline{
+
+    .banner .headline {
         top: 80%;
         width: calc(100% - 80px);
     }
-    .logo-img{
+
+    .logo-img {
         width: 80%;
         height: auto;
     }
 }
+
 @media screen and (max-width: 600px) {
-    .social{
+    .social {
         display: none;
     }
-    .banner .headline{
+
+    .banner .headline {
         font-size: 20px;
     }
 }
+
 @media screen and (max-width: 600px) {
-    .banner .headline{
+    .banner .headline {
         font-size: 18px;
     }
 }
 
 /*Sidebar*/
-#sidebar{
+#sidebar {
     width: 0;
     height: 100%;
     position: fixed;
@@ -220,8 +231,9 @@ h1{
     overflow: hidden;
     z-index: 15;
 }
-#sidecover{
-    background: rgba(0,0,0,0.5);
+
+#sidecover {
+    background: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     right: 0;
@@ -230,7 +242,8 @@ h1{
     z-index: 14;
     transition-duration: 0.4s;
 }
-#sidebar a#closes{
+
+#sidebar a#closes {
     position: absolute;
     top: 15px;
     right: 20px;
@@ -239,58 +252,68 @@ h1{
     padding: 0px;
     margin: 0;
 }
-#sidebar a#closes:hover{
+
+#sidebar a#closes:hover {
     cursor: pointer;
     color: black;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
 }
-#sidebar a{
+
+#sidebar a {
     display: block;
     padding: 20px;
     margin: 20px;
     border-radius: 30px;
     transition-duration: 0.4s;
 }
-#sidebar a:nth-of-type(2){
+
+#sidebar a:nth-of-type(2) {
     margin-top: 60px;
 }
-#sidebar a:hover{
-    background: #2B303A;
+
+#sidebar a:hover {
+    background: #2b303a;
     color: white;
 }
 
 /*Body*/
-.body{
+.body {
     width: 100%;
 }
-.segment{
+
+.segment {
     width: 100%;
     position: relative;
     min-height: 650px;
 }
-.right{
+
+.right {
     height: calc(100% - 150px);
     position: absolute;
     top: 100px;
     right: 0;
 }
-.right svg{
+
+.right svg {
     height: 450px;
     position: sticky;
     top: 25px;
 }
-.left{
+
+.left {
     height: calc(100% - 150px);
     position: absolute;
     top: 100px;
     left: 0;
 }
-.left svg{
+
+.left svg {
     height: 450px;
     position: sticky;
     top: 25px;
 }
-.inright{
+
+.inright {
     color: white;
     position: absolute;
     right: 50px;
@@ -300,7 +323,8 @@ h1{
     width: 200px;
     margin: 0;
 }
-.inleft{
+
+.inleft {
     color: white;
     position: absolute;
     left: 50px;
@@ -310,13 +334,15 @@ h1{
     width: 200px;
     margin: 0;
 }
-.lefttxt{
+
+.lefttxt {
     width: calc(100% - 430px);
     margin-left: 50px;
     font-size: 20px;
     padding-top: 100px;
 }
-.righttxt{
+
+.righttxt {
     width: calc(100% - 430px);
     margin-right: 50px;
     margin-left: 380px;
@@ -324,17 +350,67 @@ h1{
     padding-top: 100px;
     text-align: right;
 }
-.lefttxt p, .righttxt p{
+
+@media screen and (max-width: 980px) {
+    .right {
+        height: calc(100% - 100px);
+        top: 50px;
+    }
+
+    .left {
+        height: calc(100% - 100px);
+        top: 50px;
+    }
+
+    .right svg {
+        height: 350px;
+    }
+
+    .left svg {
+        height: 350px;
+    }
+
+    .inright {
+        top: 200px;
+        font-size: 40px;
+    }
+
+    .inleft {
+        top: 200px;
+        font-size: 40px;
+    }
+
+    .lefttxt {
+        width: calc(100% - 330px);
+        margin-left: 50px;
+        font-size: 18px;
+        padding-top: 50px;
+    }
+
+    .righttxt {
+        width: calc(100% - 330px);
+        margin-right: 50px;
+        margin-left: 280px;
+        font-size: 18px;
+        padding-top: 50px;
+        text-align: right;
+    }
+}
+
+.lefttxt p,
+.righttxt p {
     line-height: 35px;
 }
-.photo{
+
+.photo {
     width: 60%;
     border-radius: 25px;
     display: block;
     margin-left: 20%;
     margin-right: 20%;
 }
-.photodesc{
+
+.photodesc {
     font-size: 0.8rem;
     display: block;
     margin-top: 10px;
@@ -342,16 +418,71 @@ h1{
     text-align: center;
 }
 
+/* mobile site css */
+@media screen and (max-width: 600px) {
+
+    .lefttxt,
+    .righttxt {
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    .photo {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .left,
+    .right {
+        padding-top: 80px;
+    }
+
+    .right {
+        /* right align the svg */
+        position: static;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .left {
+        /* left align the svg */
+        position: static;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .right svg,
+    .left svg {
+        width: 65%;
+        height: auto;
+        /* disable sticky */
+        position: static;
+    }
+
+    .segment {
+        min-height: 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
 /*Footer*/
-.footer{
+.footer {
     width: 100%;
     height: 250px;
-    background-color: #2B303A;
+    background-color: #2b303a;
     color: white;
     margin-top: 50px;
     padding-top: 20px;
 }
-.footer div{
+
+.footer div {
     width: calc(49% - 80px);
     margin: 0;
     padding: 20px;
@@ -361,25 +492,43 @@ h1{
     display: inline-block;
     line-height: 20px;
 }
-.footer div a{
+
+.footer div a {
     color: #ddd;
 }
-.footer div iconify-icon{
-    color: #3DD9BD;
+
+.footer div iconify-icon {
+    color: #3dd9bd;
     padding-right: 20px;
     transform: translateY(2px);
 }
-.footer p{
+
+.footer p {
     text-align: center;
     color: #ddd;
     padding-left: 40px;
     padding-right: 40px;
 }
+
 @media screen and (max-width: 860px) {
-    .footer div{
-        width: calc(99% - 80px)
+    .footer div {
+        width: calc(99% - 80px);
     }
-    .footer{
+
+    .footer {
         height: 500px;
+    }
+}
+
+/* some utility classes */
+@media screen and (max-width: 600px) {
+    .desktop-only {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .mobile-only {
+        display: none;
     }
 }

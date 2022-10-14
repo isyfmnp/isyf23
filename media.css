@@ -1,13 +1,18 @@
-.accentdot, .shadow, .box:before {
+.accentdot,
+.shadow,
+.box:before {
     background: linear-gradient(to bottom left, #7F46F9 0%, #0073FB 100%);
 }
-.shadow{
+
+.shadow {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.banner .headline{
+
+.banner .headline {
     transform: translateY(-50%);
 }
-.footer div iconify-icon{
+
+.footer div iconify-icon {
     color: #0073FB;
 }

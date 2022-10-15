@@ -68,13 +68,14 @@ h1 {
 }
 
 .ham {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
     background-color: white;
     width: 50px;
     height: 50px;
     border-radius: 25px;
+    transition-duration: 0.4s;
 }
 
 .ham:hover {
@@ -89,13 +90,14 @@ h1 {
 }
 
 .social {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 90px;
     background-color: white;
     height: 50px;
     width: 150px;
     border-radius: 25px;
+    transition-duration: 0.4s;
 }
 
 .social div {
@@ -208,14 +210,8 @@ h1 {
         display: none;
     }
 
-    .banner .headline {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .banner .headline {
-        font-size: 18px;
+    .banner .headline h1 {
+        font-size: 40px;
     }
 }
 
@@ -265,6 +261,7 @@ h1 {
     margin: 20px;
     border-radius: 30px;
     transition-duration: 0.4s;
+    font-size: 1.25rem;
 }
 
 #sidebar a:nth-of-type(2) {

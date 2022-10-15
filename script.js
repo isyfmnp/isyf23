@@ -9,19 +9,19 @@ const closeSideBar = () => {
 
 //navbar
 let prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementsByClassName("ham")[0].style.top = "20px";
-    document.getElementsByClassName("social")[0].style.top = "20px";
-    document.getElementsByClassName("slogo")[0].style.top = "20px";
+  if (prevScrollpos > currentScrollPos || currentScrollPos < 50) {
+    document.getElementsByClassName("ham")[0].classList.remove("hide");
+    document.getElementsByClassName("social")[0].classList.remove("hide");
+    document.getElementsByClassName("slogo")[0].classList.remove("hide");
   } else {
-    document.getElementsByClassName("ham")[0].style.top = "-200px";
-    document.getElementsByClassName("social")[0].style.top = "-200px";
-    document.getElementsByClassName("slogo")[0].style.top = "-200px";
+    document.getElementsByClassName("ham")[0].classList.add("hide");
+    document.getElementsByClassName("social")[0].classList.add("hide");
+    document.getElementsByClassName("slogo")[0].classList.add("hide");
   }
   prevScrollpos = currentScrollPos;
-}
+};
 
 //Event Listeners
 document.getElementById("menu").addEventListener("click", openSideBar);

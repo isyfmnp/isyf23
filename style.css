@@ -2,6 +2,7 @@
     font-family: "Lato";
     src: url("fonts/lato-regular-webfont.woff") format("woff");
 }
+
 @font-face {
     font-family: "Open Sans";
     src: url("fonts/opensans-variablefont_wdthwght-webfont.woff") format("woff");
@@ -84,7 +85,7 @@ h1 {
     width: 50px;
     height: 50px;
     border-radius: 25px;
-    transition-duration: 0.4s;
+    transition: all 0.4s ease-in-out;
 }
 
 .ham:hover {
@@ -106,9 +107,10 @@ h1 {
     width: 50px;
     height: 50px;
     border-radius: 25px;
-    transition-duration: 0.4s;
+    transition: all 0.4s ease-in-out;
 }
-.slogo a img{
+
+.slogo a img {
     width: 30px;
     margin: 10px;
 }
@@ -121,7 +123,7 @@ h1 {
     height: 50px;
     width: 150px;
     border-radius: 25px;
-    transition-duration: 0.4s;
+    transition: all 0.4s ease-in-out;
 }
 
 .social div {
@@ -230,8 +232,16 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
+    .logo {
+        top: 10%;
+    }
+
     .social {
         display: none;
+    }
+
+    .banner .headline {
+        top: 70%;
     }
 
     .banner .headline h1 {
@@ -552,4 +562,14 @@ h1 {
     .mobile-only {
         display: none;
     }
+}
+
+.hide {
+    transform: translateY(-150px) scale(0.1);
+}
+
+.slogo,
+.ham,
+.social {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }

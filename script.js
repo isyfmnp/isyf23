@@ -14,9 +14,11 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.getElementsByClassName("ham")[0].style.top = "20px";
     document.getElementsByClassName("social")[0].style.top = "20px";
+    document.getElementsByClassName("slogo")[0].style.top = "20px";
   } else {
     document.getElementsByClassName("ham")[0].style.top = "-200px";
     document.getElementsByClassName("social")[0].style.top = "-200px";
+    document.getElementsByClassName("slogo")[0].style.top = "-200px";
   }
   prevScrollpos = currentScrollPos;
 }

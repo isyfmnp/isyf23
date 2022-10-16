@@ -153,7 +153,7 @@ h1 {
     height: 70px;
     border-radius: 35px;
     background: linear-gradient(to bottom left, #3dd9bd 0%, #58a4b0 100%);
-    box-shadow: 2px 2px 3px #333;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .box {
@@ -539,6 +539,18 @@ h1 {
     color: #ddd;
     padding-left: 40px;
     padding-right: 40px;
+}
+
+.footer div div{
+    display: inline-block; 
+    padding: 0;
+    width: calc(100% - 40px)
+}
+
+@media screen and (max-width: 460px){
+    .footer div div{
+        transform: translateY(10px);
+    }
 }
 
 @media screen and (max-width: 860px) {

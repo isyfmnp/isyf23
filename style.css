@@ -69,6 +69,7 @@ h1 {
 
 .shadow {
     background: linear-gradient(to bottom left, #3dd9bd 0%, #58a4b0 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: -1;
@@ -252,15 +253,19 @@ h1 {
 
 /*Sidebar*/
 #sidebar {
-    width: 0;
+    width: 250px;
     height: 100%;
     position: fixed;
     top: 0px;
     right: 0;
     background: white;
-    transition-duration: 0.4s;
+    transition: all 0.4s ease-in-out;
     overflow: hidden;
     z-index: 15;
+}
+
+.hide-sidebar {
+    transform: translateX(100%);
 }
 
 #sidecover {
@@ -361,7 +366,8 @@ h1 {
     padding-top: 100px;
     text-align: justify;
 }
-.righttxt h1{
+
+.righttxt h1 {
     text-align: left;
 }
 
@@ -524,14 +530,14 @@ h1 {
     padding-right: 40px;
 }
 
-.footer div div{
-    display: inline-block; 
+.footer div div {
+    display: inline-block;
     padding: 0;
     width: calc(100% - 40px)
 }
 
-@media screen and (max-width: 460px){
-    .footer div div{
+@media screen and (max-width: 460px) {
+    .footer div div {
         transform: translateY(10px);
     }
 }

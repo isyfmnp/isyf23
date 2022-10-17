@@ -1,9 +1,9 @@
 const openSideBar = () => {
-  document.getElementById("sidebar").style.width = "250px";
+  document.getElementById("sidebar").classList.remove("hide-sidebar");
   document.getElementById("sidecover").style.width = "100%";
 };
 const closeSideBar = () => {
-  document.getElementById("sidebar").style.width = "0px";
+  document.getElementById("sidebar").classList.add("hide-sidebar");
   document.getElementById("sidecover").style.width = "0";
 };
 

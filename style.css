@@ -533,7 +533,7 @@ h1 {
 .footer div div {
     display: inline-block;
     padding: 0;
-    width: calc(100% - 40px)
+    width: calc(100% - 60px)
 }
 
 @media screen and (max-width: 460px) {

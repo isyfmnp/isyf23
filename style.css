@@ -28,6 +28,7 @@ li {
 
 h1 {
     font-family: "Open Sans", sans-serif;
+    line-height: 3rem;
 }
 
 .center-xy {
@@ -349,6 +350,7 @@ h1 {
     margin-left: 50px;
     font-size: 20px;
     padding-top: 100px;
+    text-align: justify;
 }
 
 .righttxt {
@@ -357,6 +359,9 @@ h1 {
     margin-left: 380px;
     font-size: 20px;
     padding-top: 100px;
+    text-align: justify;
+}
+.righttxt h1{
     text-align: left;
 }
 

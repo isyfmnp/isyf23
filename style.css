@@ -344,28 +344,6 @@ h1 {
     top: 25px;
 }
 
-.inright {
-    color: white;
-    position: absolute;
-    right: 50px;
-    top: 260px;
-    font-size: 50px;
-    text-align: right;
-    width: 200px;
-    margin: 0;
-}
-
-.inleft {
-    color: white;
-    position: absolute;
-    left: 50px;
-    top: 260px;
-    font-size: 50px;
-    text-align: left;
-    width: 200px;
-    margin: 0;
-}
-
 .lefttxt {
     width: calc(100% - 430px);
     margin-left: 50px;
@@ -379,7 +357,7 @@ h1 {
     margin-left: 380px;
     font-size: 20px;
     padding-top: 100px;
-    text-align: right;
+    text-align: left;
 }
 
 @media screen and (max-width: 980px) {

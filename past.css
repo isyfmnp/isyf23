@@ -1,0 +1,23 @@
+.accentdot, .shadow, .box:before {
+    background: linear-gradient(to bottom left, #6DDA00 0%, #FFE600 100%);
+}
+.shadow{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.banner .headline{
+    transform: translateY(-50%);
+}
+.footer div iconify-icon{
+    color: #FFE600;
+}
+.lefttxt p a:hover{
+    transition-duration: 0.4s;
+}
+.lefttxt p a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.lefttxt p a:hover::after{
+    content: " >"
+}

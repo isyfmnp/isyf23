@@ -11,3 +11,29 @@
 .footer div iconify-icon{
     color: #B06AB3;
 }
+.qn{
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+.qn h1{
+    font-size: 1.5rem;
+}
+.qn p{
+    height: 0px;
+    overflow-y: hidden;
+    transform: translateX(-10px);
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+    margin: 0;
+}
+.qn h1:hover{
+    cursor: pointer;
+}

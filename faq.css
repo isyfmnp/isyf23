@@ -11,29 +11,34 @@
 .footer div iconify-icon{
     color: #B06AB3;
 }
-.qn{
-    padding: 10px;
-    border-radius: 25px;
-    margin-bottom: 20px;
-    border: 2px solid black;
-    -webkit-transition: .4s ease-in-out;
-    -moz-transition: .4s ease-in-out;
-    -o-transition: .4s ease-in-out;
-    transition: .4s ease-in-out;
+.faq-wrapper {
+    padding-bottom: 1rem;
 }
-.qn h1{
-    font-size: 1.5rem;
-}
-.qn p{
-    height: 0px;
-    overflow-y: hidden;
-    transform: translateX(-10px);
-    -webkit-transition: .4s ease-in-out;
-    -moz-transition: .4s ease-in-out;
-    -o-transition: .4s ease-in-out;
-    transition: .4s ease-in-out;
-    margin: 0;
-}
-.qn h1:hover{
+
+.faq-qn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     cursor: pointer;
+}
+
+.faq-qn>svg {
+    transition: all 0.2s ease-in-out;
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.faq-ans {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.faq-ans>p {
+    margin: 0;
+    font-size: 1.2rem;
 }

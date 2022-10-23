@@ -3,11 +3,17 @@ Created by Isaac and Weichu
 
 ## Site Structure
 Homepage
+
 About ISYF
+
 Programme
+
 Profiles
+
 Media
+
 FAQ
+
 Past ISYF Sites (Only in Early Stages of Website)
 
 ## Code Methodology

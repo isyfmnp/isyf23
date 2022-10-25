@@ -9,10 +9,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-.banner .headline {
-    transform: translateY(-50%);
-}
-
 .footer div iconify-icon {
     color: #0073FB;
 }

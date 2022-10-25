@@ -1,16 +1,18 @@
-.accentdot, .shadow, .box:before {
+.accentdot,
+.shadow,
+.box:before {
     background: linear-gradient(to bottom left, #B06AB3 0%, #4568DC 100%);
 }
-.shadow{
+
+.shadow {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.banner .headline{
-    transform: translateY(-50%);
-}
-.footer div iconify-icon{
+
+.footer div iconify-icon {
     color: #B06AB3;
 }
+
 .faq-wrapper {
     padding-bottom: 1rem;
 }

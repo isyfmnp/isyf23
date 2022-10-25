@@ -28,7 +28,6 @@ li {
 
 h1 {
     font-family: "Open Sans", sans-serif;
-    line-height: 3rem;
 }
 
 .center-xy {
@@ -52,31 +51,43 @@ h1 {
     color: white;
     height: auto;
     position: absolute;
-    top: 50%;
-    right: 40px;
-    transform: translateY(calc(-50% - 60px));
-    width: 500px;
+
+    width: 100%;
+    height: 100%;
+    font-size: 4rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headline.homepage-headline {
     text-align: right;
-    font-size: 23px;
+    font-size: 2rem;
+    width: 50%;
+    padding-left: 45%;
+    padding-right: 5%;
 }
 
 .title {
-    position: absolute;
-    top: 0;
-    right: 0;
+    z-index: 2;
     margin: 0;
+    transform: translate(0, 50%);
 }
+
 
 .shadow {
     background: linear-gradient(to bottom left, #3dd9bd 0%, #58a4b0 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    z-index: -1;
-    position: absolute;
-    top: 2px;
-    right: -2px;
+    z-index: 1;
+    position: relative;
+    transform: translate(3px, calc(-50% + 3px));
     margin: 0;
+
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .ham {
@@ -222,11 +233,6 @@ h1 {
         height: 50%;
     }
 
-    .banner .headline {
-        top: 80%;
-        width: calc(100% - 80px);
-    }
-
     .logo-img {
         width: 80%;
         height: auto;
@@ -240,10 +246,6 @@ h1 {
 
     .social {
         display: none;
-    }
-
-    .banner .headline {
-        top: 70%;
     }
 
     .banner .headline h1 {

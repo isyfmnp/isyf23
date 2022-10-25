@@ -1,16 +1,18 @@
-.accentdot, .shadow, .box:before {
+.accentdot,
+.shadow,
+.box:before {
     background: linear-gradient(to bottom left, #6DDA00 0%, #FFE600 100%);
 }
-.shadow{
+
+.shadow {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.banner .headline{
-    transform: translateY(-50%);
-}
-.footer div iconify-icon{
+
+.footer div iconify-icon {
     color: #6DDA00;
 }
+
 /*.lefttxt p a{
     transition: all 0.4s ease-in-out;
 }
@@ -25,6 +27,7 @@
 .lefttxt p a {
     position: relative;
 }
+
 .lefttxt p a::before {
     content: "";
     position: absolute;
@@ -41,8 +44,9 @@
         left: 0;
         right: auto;
         width: 100%;
-    }
-    .lefttxt p a:hover::after{
+    }
+
+    .lefttxt p a:hover::after {
         content: " >"
     }
 }

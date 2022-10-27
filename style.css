@@ -241,6 +241,23 @@ h1 {
     }
 }
 
+@media screen and (max-width: 910px){
+    .banner .headline h1 {
+        font-size: 3rem;
+    }
+    .headline.homepage-headline {
+        flex-direction: column;
+        text-align: right;
+        width: 80%;
+        padding-left: calc(20% - 20px);
+        padding-top: 40%;
+        padding-right: 20px;
+    }
+    .banner .headline.homepage-headline h1{
+        font-size: 3rem;
+    }
+}
+
 @media screen and (max-width: 600px) {
     .logo {
         top: 10%;
@@ -249,9 +266,8 @@ h1 {
     .social {
         display: none;
     }
-
-    .banner .headline h1 {
-        font-size: 40px;
+    .banner .headline.homepage-headline h1{
+        font-size: 2rem;
     }
 }
 
@@ -504,6 +520,7 @@ h1 {
     color: white;
     margin-top: 50px;
     padding-top: 20px;
+    margin-bottom: 0px;
 }
 
 .footer div {

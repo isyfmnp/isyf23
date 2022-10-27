@@ -326,7 +326,6 @@ h1 {
     width: 100%;
     position: relative;
     min-height: 650px;
-    overflow-x: hidden;
 }
 
 .right {

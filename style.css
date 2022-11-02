@@ -250,7 +250,7 @@ h1 {
         text-align: right;
         width: 80%;
         padding-left: calc(20% - 20px);
-        padding-top: 40%;
+        padding-top: 25%;
         padding-right: 20px;
     }
     .banner .headline.homepage-headline h1{
@@ -268,6 +268,9 @@ h1 {
     }
     .banner .headline.homepage-headline h1{
         font-size: 2rem;
+    }
+    .headline.homepage-headline {
+        padding-top: 40%;
     }
 }
 

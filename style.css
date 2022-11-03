@@ -287,7 +287,7 @@ h1 {
     right: 0;
     background: white;
     transition: all 0.4s ease-in-out;
-    overflow: hidden;
+    overflow: scroll;
     z-index: 15;
 }
 
@@ -322,12 +322,14 @@ h1 {
     background: rgba(0, 0, 0, 0);
 }
 
-#sidebar a {
+#sidebar a,
+#sidebar .sidebar-collapsable-title,
+#sidebar .sidebar-collapsable-items>li>a {
     display: block;
     padding: 20px;
     margin: 20px;
     border-radius: 30px;
-    transition-duration: 0.4s;
+    transition: all 0.4s ease-in-out;
     font-size: 1.25rem;
 }
 
@@ -335,8 +337,52 @@ h1 {
     margin-top: 60px;
 }
 
-#sidebar a:hover {
+#sidebar a:hover,
+#sidebar .sidebar-collapsable-title:hover {
     background: #2b303a;
+    color: white;
+}
+
+.sidebar-collapsable {
+    cursor: pointer;
+    width: 100%;
+}
+
+.sidebar-collapsable-title {
+    display: flex !important;
+    justify-content: space-between;
+
+    margin-bottom: 0 !important;
+}
+
+.sidebar-collapsable-title>span>iconify-icon {
+    transition: all 0.4s ease-in-out;
+}
+
+.sidebar-collapsable-items {
+    max-height: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+}
+
+.sidebar-collapsable-items>li {
+    list-style: none;
+}
+
+.sidebar-collapsable-items>li:nth-last-of-type(1)>a {
+    margin-bottom: 0 !important;
+}
+
+#sidebar .sidebar-collapsable:hover>.sidebar-collapsable-items {
+    max-height: 1000px;
+}
+
+#sidebar .sidebar-collapsable:hover>.sidebar-collapsable-title>span>iconify-icon {
+    transform: rotate(180deg);
+}
+
+#sidebar .sidebar-collapsable-title:hover>span>iconify-icon {
     color: white;
 }
 

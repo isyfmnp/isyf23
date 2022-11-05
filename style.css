@@ -15,15 +15,17 @@ body {
     width: 100%;
     height: 100%;
     font-family: "Lato", sans-serif;
+
+    scroll-behavior: smooth;
+    --isyf-red: #FB4D3D;
+    --isyf-yellow: #FFC759;
+    --isyf-green: #03CEA4;
+    --isyf-blue: #345995;
 }
 
 a {
     text-decoration: none;
     color: black;
-}
-
-li {
-    line-height: 30px;
 }
 
 h1 {
@@ -280,7 +282,7 @@ h1 {
 
 /*Sidebar*/
 #sidebar {
-    width: 250px;
+    width: fit-content;
     height: 100%;
     position: fixed;
     top: 0px;
@@ -374,11 +376,7 @@ h1 {
     margin-bottom: 0 !important;
 }
 
-#sidebar .sidebar-collapsable:hover>.sidebar-collapsable-items {
-    max-height: 1000px;
-}
-
-#sidebar .sidebar-collapsable:hover>.sidebar-collapsable-title>span>iconify-icon {
+.rotate-180 {
     transform: rotate(180deg);
 }
 

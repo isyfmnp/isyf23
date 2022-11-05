@@ -1,0 +1,158 @@
+.accentdot,
+.shadow,
+.box:before {
+    background: linear-gradient(to bottom left, #6DDA00 0%, #FFE600 100%);
+}
+
+.shadow {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer div iconify-icon {
+    color: #6DDA00;
+}
+
+/* speakers */
+.profile-pic-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 12.5%);
+    justify-items: center;
+    padding: 100px 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    .profile-pic-gallery {
+        grid-template-columns: repeat(auto-fit, calc(100% / 6));
+    }
+
+    .circle-r,
+    .circle-y,
+    .circle-b,
+    .circle-g {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile-pic-gallery {
+        grid-template-columns: repeat(auto-fit, 25%);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .profile-pic-gallery {
+        grid-template-columns: repeat(auto-fit, calc(100% / 3));
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-pic-gallery {
+        grid-template-columns: repeat(auto-fit, 50%);
+    }
+}
+
+.profile-pic-gallery img,
+.profile-pic-gallery .filler-circle {
+    width: 120px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.speakers-wrapper {
+    padding: 0 50px 100px 50px;
+}
+
+.speaker {
+    display: flex;
+    padding: 1rem;
+}
+
+.speaker>.speaker-photo {
+    flex-grow: 1;
+    max-width: 25%;
+    margin-right: 50px;
+    border-radius: 50%;
+}
+
+.speaker .speaker-name {
+    font-size: 3rem;
+    font-weight: bolder;
+
+    font-weight: 900;
+    margin: 0.5rem 1rem 0.5rem 0;
+
+    background-image: linear-gradient(transparent calc(65% - 5px), #fda39b 5px);
+    width: fit-content;
+}
+
+.speaker:nth-child(4n + 2) .speaker-name {
+    background-image: linear-gradient(transparent calc(65% - 5px), #ffdd99 5px);
+}
+
+.speaker:nth-child(4n + 3) .speaker-name {
+    background-image: linear-gradient(transparent calc(65% - 5px), #98fdea 5px);
+}
+
+.speaker:nth-child(4n + 4) .speaker-name {
+    background-image: linear-gradient(transparent calc(65% - 5px), #97bfff 5px);
+}
+
+.speaker .speaker-info div {
+    display: flex;
+    align-items: center;
+}
+
+.speaker .speaker-info div iconify-icon {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.speaker .speaker-info div iconify-icon:hover {
+    transform: scale(1.2);
+}
+
+/* schools */
+
+.schools-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 1rem;
+}
+
+.school {
+    position: relative
+}
+
+.school-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.overlay {
+    position: relative;
+    text-align: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.overlay:hover {
+    background-color: whitesmoke;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.overlay-text {
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.overlay:hover~.overlay-text {
+    opacity: 1;
+}

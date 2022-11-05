@@ -282,14 +282,14 @@ h1 {
 
 /*Sidebar*/
 #sidebar {
-    width: fit-content;
+    width: 300px;
     height: 100%;
     position: fixed;
     top: 0px;
     right: 0;
     background: white;
     transition: all 0.4s ease-in-out;
-    overflow: scroll;
+    overflow-x: hidden;
     z-index: 15;
 }
 

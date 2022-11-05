@@ -1,0 +1,14 @@
+.accentdot,
+.shadow,
+.box:before {
+    background: linear-gradient(to bottom left, #6DDA00 0%, #FFE600 100%);
+}
+
+.shadow {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer div iconify-icon {
+    color: #6DDA00;
+}

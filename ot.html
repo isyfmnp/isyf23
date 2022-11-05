@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Organising Team | ISYF 2023</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="ot.css" />
+    <link rel="icon" href="media/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="media/pastbg1.webp" as="image" />
+    <link rel="preload" href="media/ISYF_logo.png" as="image" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+</head>
+
+<body>
+    <div class="banner" style="background-image: url('media/pastbg1.webp')">
+        <div class="slogo box">
+            <a href="index.html"><img src="media/ISYF_logo.png" /></a>
+        </div>
+        <div class="ham box" id="menu">
+            <iconify-icon id="menuh" icon="charm:menu-hamburger" width="25" height="25"></iconify-icon>
+        </div>
+        <div class="social box">
+            <div class="center-xy">
+                <a href="https://m.facebook.com/isyf.2023/" target="_blank" rel="noopener noreferrer">
+                    <iconify-icon icon="akar-icons:facebook-fill" width="25" height="25"></iconify-icon>
+                </a>
+                <a href="https://www.instagram.com/isyf.2023/" target="_blank" rel="noopener noreferrer">
+                    <iconify-icon icon="akar-icons:instagram-fill" width="25" height="25"></iconify-icon>
+                </a>
+                <a href="https://www.youtube.com/channel/UCs9CbJcxC2x8OPYiNx5QDTg" target="_blank"
+                    rel="noopener noreferrer">
+                    <iconify-icon icon="ant-design:youtube-filled" width="25" height="25"></iconify-icon>
+                </a>
+            </div>
+        </div>
+        <div class="headline">
+            <h1 class="title">Organising Team</h1>
+            <h1 class="shadow">Organising Team</h1>
+        </div>
+        <div class="accentdot"></div>
+    </div>
+    <div id="sidecover"></div>
+    <div id="sidebar" class="hide-sidebar">
+        <a id="closes">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programme.html">Programme</a>
+        <div class="sidebar-collapsable">
+            <div class="sidebar-collapsable-title"><span>
+                    Profiles
+                </span>
+                <span>
+                    <iconify-icon icon="akar-icons:chevron-down" width="20" height="20"></iconify-icon>
+                </span>
+            </div>
+            <ul class="sidebar-collapsable-items">
+                <li><a href="/speakers.html">Speakers</a></li>
+                <li><a href="/schs.html">Schools</a></li>
+                <li><a href="/ot.html">Organising Team</a></li>
+            </ul>
+        </div>
+        <a href="media.html">Media</a>
+        <a href="faq.html">FAQ</a>
+    </div>
+    <div class="body">
+        <div class="segment">
+            <h2>under construction</h2>
+            <p>awaiting isyf 2022 phototaking</p>
+        </div>
+        <div class="footer">
+            <div>
+                <iconify-icon icon="carbon:location-filled" width="20"></iconify-icon>
+                <div>
+                    <a href="https://goo.gl/maps/ncSReHuHrrQAPkHB6" target="_blank" rel="noopener noreferrer">661
+                        Bukit
+                        Timah Road, Singapore 269734</a>
+                </div>
+            </div>
+            <div>
+                <iconify-icon icon="charm:mail" width="20"></iconify-icon><a href="mailto:reach_isyf@hci.edu.sg"
+                    target="_blank" rel="noopener noreferrer">reach_isyf@hci.edu.sg</a>
+            </div>
+            <div>
+                <iconify-icon icon="bxs:phone" width="20"></iconify-icon>+65 6468 3955
+            </div>
+            <div>
+                <iconify-icon icon="fa-solid:fax" width="20"></iconify-icon>Fax: 6769
+                5857
+            </div>
+            <p>
+                This is the ISYF (International Science Youth Forum) 2023 website. Any
+                advice and information found on the pages are solely for the event and
+                educational purposes only. Information related to the speakers are
+                displayed with their consent. <br /><br />
+                &copy; International Science Youth Forum 2023. All rights reserved.
+            </p>
+        </div>
+</body>
+<script src="script.js"></script>
+<script>
+    let links = document.querySelectorAll(".speaker iconify-icon")
+    links.forEach(
+        (link) => {
+            link.onclick = function (e) {
+                navigator.clipboard.writeText(window.location.origin + window.location.pathname + "#" + link.parentElement.parentElement.parentElement.id)
+            }
+        }
+    )
+</script>
+
+</html>

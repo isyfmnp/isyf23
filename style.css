@@ -646,3 +646,20 @@ h1 {
 .social {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
+#sidebar::-webkit-scrollbar{
+    width: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(50, 50, 50, 0.5);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.2);
+}

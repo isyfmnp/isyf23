@@ -15,7 +15,7 @@
 
 /* timeline */
 .timeline {
-    padding: 100px 50px;
+    padding: 50px 100px 0 100px;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -30,6 +30,7 @@
 @media screen and (max-width: 1200px) {
     .timeline {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding: 50px 50px 0 50px;
     }
 }
 

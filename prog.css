@@ -16,7 +16,14 @@
 /* timeline */
 .timeline {
     padding: 50px 100px 0 100px;
+}
 
+.timeline-title {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.timeline-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1rem;
@@ -29,8 +36,11 @@
 
 @media screen and (max-width: 1200px) {
     .timeline {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
         padding: 50px 50px 0 50px;
+    }
+
+    .timeline-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
@@ -43,6 +53,9 @@
 @media (max-width: 768px) {
     .timeline {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .timeline-grid {
         padding: 50px 25px;
     }
 }

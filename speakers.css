@@ -24,6 +24,10 @@
 @media screen and (max-width: 1200px) {
     .profile-pic-gallery {
         grid-template-columns: repeat(auto-fit, calc(100% / 6));
+
+        padding: 50px 0 0 0;
+        margin: 0 auto;
+        width: 95%;
     }
 
     .circle-r,
@@ -63,16 +67,52 @@
     padding: 0 50px 100px 50px;
 }
 
+
 .speaker {
     display: flex;
+    align-items: center;
     padding: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+    .speaker {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 .speaker>.speaker-photo {
-    flex-grow: 1;
     max-width: 25%;
     margin-right: 50px;
     border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+@media screen and (max-width: 1200px) {
+    .speakers-wrapper {
+        padding: 50px 0 0 0;
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .speaker-photo {
+        margin-right: 25px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .speaker-photo {
+        max-width: 60% !important;
+        margin: 0 auto !important;
+    }
+
+    .speaker-info>div {
+        justify-content: center;
+    }
+
+    .speaker-title {
+        text-align: center;
+    }
 }
 
 .speaker .speaker-name {

@@ -15,7 +15,13 @@
 
 /* page content */
 .schs-wrapper {
-    padding: 100px 50px;
+    padding: 100px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .schs-wrapper {
+        padding: 50px 0;
+    }
 }
 
 .marquee {
@@ -42,6 +48,24 @@
     position: relative;
     text-align: center;
     transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+    .marquee-item {
+        flex: 0 0 20vw;
+        margin: 0 2vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .marquee {
+        padding: 2vw;
+    }
+
+    .marquee-item {
+        flex: 0 0 40vw;
+        margin: 0 2vw;
+    }
 }
 
 .marquee-item img {

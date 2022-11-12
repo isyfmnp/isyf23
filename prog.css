@@ -44,24 +44,24 @@
     }
 }
 
-@media (max-width: 1024px) {
-    .timeline {
+@media screen and (max-width: 1024px) {
+    .timeline-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
-@media (max-width: 768px) {
-    .timeline {
+@media screen and (max-width: 768px) {
+    .timeline-grid {
         grid-template-columns: 1fr 1fr;
     }
 
-    .timeline-grid {
+    .timeline {
         padding: 50px 25px;
     }
 }
 
-@media (max-width: 480px) {
-    .timeline {
+@media screen and (max-width: 480px) {
+    .timeline-grid {
         grid-template-columns: 1fr;
     }
 

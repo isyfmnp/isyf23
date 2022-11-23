@@ -12,3 +12,21 @@
 .footer div iconify-icon {
     color: #FBAF00;
 }
+
+#support{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#support>img, #support>div{
+    width: calc(50% - 40px);
+    min-width: 200px;
+    padding: 20px;
+}
+#ntuias img{
+    width: 100%;
+}
+#ntuias{
+    text-align: center;
+}

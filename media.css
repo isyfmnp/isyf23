@@ -12,3 +12,26 @@
 .footer div iconify-icon {
     color: #0073FB;
 }
+  .gallery{
+    height: auto;
+    border-radius: 25px;
+  }
+  .gallery-cell {
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 25px;
+  }
+  .gallery-cell>img {
+    display: block;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+  }
+  
+  @media screen and ( min-width: 768px ) {
+    .gallery-cell img {
+      height: 400px;
+    }
+  }

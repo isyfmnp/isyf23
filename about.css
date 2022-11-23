@@ -30,3 +30,24 @@
 #ntuias{
     text-align: center;
 }
+#ntuias a {
+    position: relative;
+}
+
+#ntuias a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    #ntuias a:hover::before {
+        right: auto;
+        width: 100%;
+    }
+}

@@ -15,95 +15,81 @@
 
 /* page content */
 .schs-wrapper {
-    padding: 100px 0;
+    padding: 100px 50px;
+
+    display: grid;
+    justify-items: center;
+
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
-@media screen and (max-width: 768px) {
-    .schs-wrapper {
-        padding: 50px 0;
-    }
+.schs-wrapper img {
+    width: 225px;
 }
 
-.marquee {
-    overflow: hidden;
-    padding: 1vw;
-}
 
-.marquee-content-l2r {
-    display: flex;
-    animation: scrolling 45s linear infinite;
-}
-
-.marquee-content-r2l {
-    display: flex;
-    animation: scrolling 45s linear infinite reverse;
-}
-
-.marquee-item {
-    flex: 0 0 16vw;
-    margin: 0 1vw;
-    /*   flex: 0 0 20vw; */
-    /*   margin: 0 2vw; */
-
+.sch {
     position: relative;
     text-align: center;
-    transition: all 0.2s ease-in-out;
 }
 
-@media screen and (max-width: 1024px) {
-    .marquee-item {
-        flex: 0 0 20vw;
-        margin: 0 2vw;
-    }
-}
+.overlay-text {
+    font-size: 1.5rem;
 
-@media screen and (max-width: 768px) {
-    .marquee {
-        padding: 2vw;
-    }
-
-    .marquee-item {
-        flex: 0 0 40vw;
-        margin: 0 2vw;
-    }
-}
-
-.marquee-item img {
-    display: block;
+    /* white overlay background */
+    color: transparent;
     width: 100%;
-    /* padding: 0 20px; */
-}
+    height: 100%;
+    transition: 0.2s ease-in-out;
 
-.marquee-item span {
+    /* center text within overlay */
+    display: flex;
+    align-items: center;
+
+    /* center overlay */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    font-size: 1.5rem;
-    opacity: 0;
-    transition: all 0.2s ease-in-out;
 }
 
-.marquee-item:hover span {
-    opacity: 1;
+.overlay-text:hover {
+    color: black;
+    background-color: #ffffff;
+    opacity: 0.8;
 }
 
-.marquee-item:hover {
-    opacity: 0.9;
-}
+@media screen and (max-width: 1024px) {
+    .schs-wrapper {
+        padding: 50px 25px;
 
-.marquee-content-l2r:hover,
-.marquee-content-r2l:hover {
-    animation-play-state: paused;
-}
-
-@keyframes scrolling {
-    0% {
-        transform: translateX(0);
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-    100% {
-        transform: translatex(-144vw);
+    .schs-wrapper img {
+        width: 150px;
+    }
+
+    .overlay-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .schs-wrapper {
+        padding: 50px 25px;
+
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .schs-wrapper img {
+        width: 120px;
+    }
+
+    .overlay-text {
+        font-size: 1rem;
     }
 }

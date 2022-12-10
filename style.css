@@ -548,8 +548,8 @@ h1 {
 
     .right svg,
     .left svg {
-        width: 65%;
-        height: auto;
+        height: 80px;
+        width: auto;
         /* disable sticky */
         position: static;
     }
@@ -647,7 +647,7 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-#sidebar::-webkit-scrollbar{
+#sidebar::-webkit-scrollbar {
     width: 0px;
 }
 
@@ -655,7 +655,7 @@ h1 {
     width: 12px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: rgba(50, 50, 50, 0.5);
     border-radius: 6px;
 }

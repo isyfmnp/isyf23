@@ -61,21 +61,24 @@
     opacity: 0.8;
 }
 
-.schlist{
+.schlist {
     width: 100%;
 }
-.schlist div{
+
+.schlist div {
     position: relative;
     height: 100px;
     margin-top: 50px;
 }
-.schlist div img{
+
+.schlist div img {
     height: 100px;
     position: absolute;
     top: 0px;
     left: 0px;
 }
-.schlist div p{
+
+.schlist div p {
     font-size: 1.5rem;
     position: absolute;
     margin: 0;
@@ -108,7 +111,7 @@
         padding: 50px 25px;
 
         gap: 1rem;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .schs-wrapper img {
@@ -121,7 +124,13 @@
         font-size: 1rem;
     }
 
-    .schlist div p{
+    .schlist div p {
         font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .schs-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 }

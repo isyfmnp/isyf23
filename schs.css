@@ -25,7 +25,8 @@
 }
 
 .schs-wrapper img {
-    width: 225px;
+    width: 150px;
+    display: inline-block;
 }
 
 
@@ -69,7 +70,9 @@
     }
 
     .schs-wrapper img {
-        width: 150px;
+        width: 120px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .overlay-text {
@@ -86,7 +89,9 @@
     }
 
     .schs-wrapper img {
-        width: 120px;
+        width: 90px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     .overlay-text {

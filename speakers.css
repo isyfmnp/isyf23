@@ -131,10 +131,17 @@
     width: fit-content;
 }
 
-.speaker-title{
+@media screen and (max-width: 768px) {
+    .speaker .speaker-name {
+        font-size: 2rem;
+    }
+}
+
+.speaker-title {
     font-size: 1.5rem;
 }
-.speaker-desc{
+
+.speaker-desc {
     font-size: 1rem;
     line-height: 1.5rem;
 }

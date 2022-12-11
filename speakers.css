@@ -71,7 +71,7 @@
 
 .speaker {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 1rem;
 }
 
@@ -87,6 +87,9 @@
     margin-right: 50px;
     border-radius: 50%;
     aspect-ratio: 1/1;
+    position: sticky;
+    left: 0;
+    top: 50px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -105,6 +108,7 @@
     .speaker-photo {
         max-width: 60% !important;
         margin: 0 auto !important;
+        position: inherit !important;
     }
 
     .speaker-info>div {
@@ -112,7 +116,7 @@
     }
 
     .speaker-title {
-        text-align: center;
+        font-size: 1.3rem;
     }
 }
 

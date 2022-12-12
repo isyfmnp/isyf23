@@ -78,7 +78,7 @@
 @media screen and (max-width: 768px) {
     .speaker {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 }
 
@@ -107,7 +107,7 @@
 @media screen and (max-width: 768px) {
     .speaker-photo {
         max-width: 60% !important;
-        margin: 0 auto !important;
+        margin: 0 !important;
         position: inherit !important;
     }
 

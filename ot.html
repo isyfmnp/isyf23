@@ -68,7 +68,11 @@
         <div class="segment">
             <div class="right"></div>
             <div class="lefttxt">
-                <img src="media/ot/ano.jpg" class="gp">
+                <div id="ano">
+                    <img src="media/ot/ano.jpg" class="gp">
+                    <div class="circles"></div>
+                </div>
+                <span>Cherie</span>
             </div>
         </div>
         <div class="footer">
@@ -101,15 +105,6 @@
         </div>
 </body>
 <script src="script.js"></script>
-<script>
-    let links = document.querySelectorAll(".speaker iconify-icon")
-    links.forEach(
-        (link) => {
-            link.onclick = function (e) {
-                navigator.clipboard.writeText(window.location.origin + window.location.pathname + "#" + link.parentElement.parentElement.parentElement.id)
-            }
-        }
-    )
-</script>
+<script src="ot.js"></script>
 
 </html>

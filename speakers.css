@@ -2,7 +2,7 @@
 .accentdot,
 .shadow,
 .box:before {
-    background: linear-gradient(to bottom left, #6DDA00 0%, #FFE600 100%);
+    background: linear-gradient(to bottom left, #00f6ff 0%, #002298 100%);
 }
 
 .shadow {
@@ -11,7 +11,7 @@
 }
 
 .footer div iconify-icon {
-    color: #6DDA00;
+    color: #00f6ff;
 }
 
 /* speakers */

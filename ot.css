@@ -13,7 +13,7 @@
     color: #fd8a2d;
 }
 
-.lefttxt>div{
+.lefttxt>div {
     position: relative;
     width: 80%;
     display: block;
@@ -21,17 +21,18 @@
     margin-right: 10%;
 }
 
-.gp{
+.gp {
     width: 100%;
     border-radius: 25px;
 }
-.circles{
+
+.circles {
     width: 40px;
     height: 40px;
     position: absolute;
     display: none;
     border: 2px solid white;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 50%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
 }

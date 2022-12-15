@@ -509,6 +509,14 @@ h1 {
     text-align: center;
 }
 
+.photodesc-header {
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    text-align: center;
+}
+
 /* mobile site css */
 @media screen and (max-width: 600px) {
 

@@ -160,6 +160,12 @@
     align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+    .speaker .speaker-info div {
+        justify-content: center;
+    }
+}
+
 .speaker .speaker-info div iconify-icon {
     transition: all 0.2s ease-in-out;
     cursor: pointer;

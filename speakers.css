@@ -141,6 +141,7 @@
 .speaker-desc {
     font-size: 1rem;
     line-height: 1.5rem;
+    text-align: justify;
 }
 
 .speaker:nth-child(4n + 2) .speaker-name {

@@ -22,6 +22,14 @@
     padding: 100px 50px;
 }
 
+@media screen and (min-width: 1200px) {
+
+    .circle-b,
+    .circle-g {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .profile-pic-gallery {
         grid-template-columns: repeat(auto-fit, calc(100% / 6));
@@ -30,18 +38,16 @@
         margin: 0 auto;
         width: 95%;
     }
-
-    .circle-r,
-    .circle-y,
-    .circle-b,
-    .circle-g {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 768px) {
     .profile-pic-gallery {
         grid-template-columns: repeat(auto-fit, 25%);
+    }
+
+    .circle-b,
+    .circle-g {
+        display: none;
     }
 }
 
@@ -49,11 +55,24 @@
     .profile-pic-gallery {
         grid-template-columns: repeat(auto-fit, calc(100% / 3));
     }
+
+    .circle-b,
+    .circle-g,
+    .circle-y {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .profile-pic-gallery {
         grid-template-columns: repeat(auto-fit, 50%);
+    }
+
+    .circle-r,
+    .circle-b,
+    .circle-g,
+    .circle-y {
+        display: none;
     }
 }
 
